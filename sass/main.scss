@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap");
+
+$primary: #797c86;
+$secondary: #e4e4e6;
+$success: #070708;
+$danger: #4a2ced;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: $success;
+}
+
+.contact {
+  width: 100%;
+
+  &__text {
+    width: 358px;
+    @media (min-width: 992px) {
+      width: 414px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 535px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    @media (min-width: 992px) {
+      font-size: 34px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 60px;
+      white-space: nowrap;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    @media (min-width: 992px) {
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 400;
+    }
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+
+  &__number,
+  &__email {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.send__button {
+  width: 296px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.send__button > i {
+  background-color: $danger;
+  padding: 12px 30px;
+  border-radius: 40px;
+}
+
+input {
+  outline: none;
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+}
+
+textarea {
+  outline: none;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+}
